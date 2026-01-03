@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+
+<body>
+
+<header>
+  <h1>MyPortfolio</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <button id="themeToggle" class="theme-btn">🌙</button>
+  </nav>
+</header>
+
+<section class="hero">
+
+  <div class="hero-premium">
+    <div class="bg-title">HI I'M</div>
+
+    <div class="profile-stack">
+      <div class="profile-image">
+        <img src="assets/MyPhoto.jpg" alt="Profile" />
+      </div>
+      <h1 class="profile-name">Abhinav</h1>
+    </div>
+  </div>
+
+  <div class="hero-text">
+    <h2>Hello, I'm <span>Abhinav K G</span></h2>
+    <p>Engineering ideas into clean, interactive experiences.</p>
+    <button onclick="scrollToContact()">Contact Me</button>
+  </div>
+
+</section>
+
+<section class="about reveal" id="about">
+  <div class="section-header">
+    <h2>About Me</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="project-card">
+    <p>
+      I am a Computer Science Engineering student with a strong foundation in
+      <strong>C++, SQL, frontend and backend development</strong>. I enjoy building scalable
+      software systems and working on real-world applications involving
+      automation, AI, and full-stack development.
+    </p>
+
+    <p>
+      I have experience working in Agile teams, following test-driven
+      development practices, and building secure, maintainable applications.
+      I am continuously improving my problem-solving and system design skills.
+    </p>
+  </div>
+</section>
+
+<section class="projects reveal" id="projects">
+  <div class="section-header">
+    <h2>Projects</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <h3>Friday – Offline AI Assistant</h3>
+      <p>
+        A fully offline AI assistant with wake-word detection, voice interaction,
+        reminders, and OS-level automation.
+      </p>
+      <ul>
+        <li>Wake-word detection (Porcupine)</li>
+        <li>Voice interaction</li>
+        <li>File search & reminders</li>
+        <li>Fully offline execution</li>
+      </ul>
+      <span class="tech">Python · Tkinter · Automation</span>
+    </div>
+
+    <div class="project-card">
+      <h3>CareerBridge – Job Portal</h3>
+      <p>
+        A full-stack job portal connecting recruiters and job seekers with
+        authentication and dashboards.
+      </p>
+      <ul>
+        <li>Role-based authentication</li>
+        <li>Job posting & applications</li>
+        <li>REST APIs</li>
+        <li>Agile development</li>
+      </ul>
+      <span class="tech">React · Node.js · MongoDB</span>
+    </div>
+
+    <div class="project-card">
+      <h3>HealthHub – Health Platform</h3>
+      <p>
+        A healthcare platform focused on secure data handling and backend
+        reliability.
+      </p>
+      <ul>
+        <li>Secure MongoDB storage</li>
+        <li>Backend-focused architecture</li>
+        <li>Test-driven development</li>
+        <li>Team collaboration</li>
+      </ul>
+      <span class="tech">Node.js · MongoDB · Agile</span>
+    </div>
+
+  </div>
+</section>
+
+<section class="skills reveal" id="skills">
+  <div class="section-header">
+    <h2>Skills</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="skill-grid">
+    <div class="project-card"><h4>Programming</h4><p>C, C++, Java, Python (Basics), JavaScript</p></div>
+    <div class="project-card"><h4>Web Technologies</h4><p>HTML, CSS, React, Node.js, Express</p></div>
+    <div class="project-card"><h4>Databases</h4><p>SQL, MongoDB</p></div>
+    <div class="project-card"><h4>Concepts</h4><p>DSA, OOPS, SDLC, Agile, Cloud Basics</p></div>
+    <div class="project-card"><h4>Tools</h4><p>Git, GitHub, VS Code</p></div>
+  </div>
+</section>
+
+<section class="about reveal" id="hobbies">
+  <div class="section-header">
+    <h2>Hobbies & Interests</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="project-card">
+    <p>Outside of academics, I enjoy playing strategy-based video games and sports.</p>
+    <p>I also enjoy travelling and exploring new places with friends.</p>
+    <p>Listening to music and practicing coding helps me stay focused and creative.</p>
+  </div>
+</section>
+
+<section id="gallery" class="gallery">
+  <div class="section-header">
+    <h2>Gallery / Inspirations</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="gallery-grid">
+    <img class="reveal" src="assets/20231113_164458.jpg" onclick="openLightbox(this.src)" />
+    <img class="reveal" src="assets/WhatsApp Image 2026-01-03 at 08.44.51 (2).jpeg" onclick="openLightbox(this.src)" />
+    <img class="reveal" src="assets/WhatsApp Image 2026-01-03 at 08.44.51.jpeg" onclick="openLightbox(this.src)" />
+    <img class="reveal" src="assets/WhatsApp Image 2026-01-03 at 08.44.51 (1).jpeg" onclick="openLightbox(this.src)" />
+    <img class="reveal" src="assets/20220514_151008.jpg" onclick="openLightbox(this.src)" />
+    <img class="reveal" src="assets/20240915_184259.jpg" onclick="openLightbox(this.src)" />
+    <img class="reveal" src="assets/WhatsApp Image 2026-01-03 at 09.40.01.jpeg" onclick="openLightbox(this.src)" />
+    <img class="reveal" src="assets/IMG-20240915-WA0049.jpg" onclick="openLightbox(this.src)" />
+    <img class="reveal" src="assets/IMG20231114123955.jpg" onclick="openLightbox(this.src)" />
+    <img class="reveal" src="assets/20241229_160837.jpg" onclick="openLightbox(this.src)" />
+    <img class="reveal" src="assets/20241229_161126.jpg" onclick="openLightbox(this.src)" />
+    <img class="reveal" src="assets/nature.webp" onclick="openLightbox(this.src)" />
+  </div>
+</section>
+
+<footer class="premium-footer" id="contact">
+  <div class="footer-glow"></div>
+
+  <h2>Let’s Work Together</h2>
+  <p>I’m open to internships, full-time roles, and collaborative projects.</p>
+
+  <div class="footer-actions" >
+    <a href="https://github.com/AbhinavKG27" target="_blank" class="footer-btn"><i class="fab fa-github"></i>GitHub</a>
+    <a href="assets/AbhinavResume.pdf" download class="footer-btn"><i class="fas fa-file-download"></i>Resume</a>
+    <a href="mailto:abhinavkg2004@gmail.com" class="footer-btn"><i class="fas fa-envelope"></i>Contact</a>
+    <a href="https://www.linkedin.com/in/abhinavkg2004" target="_blank" class="footer-btn"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
+    <a href="tel:+919380263659" class="footer-btn"><i class="fas fa-phone"></i>Phone No.</a>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2024 Abhinav K G. All rights reserved.</span>
+    <span>Designed by Abhinav K G</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightboxImg" />
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
