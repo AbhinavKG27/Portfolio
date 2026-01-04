@@ -439,12 +439,10 @@ body.light .footer-glow {
   0%,100% {transform:translateY(0);}
   50% {transform:translateY(-15px);}
 }
-
 @keyframes blobMorph {
   0%,100% {border-radius:45% 55% 50% 50% / 55% 45% 55% 45%;}
   50% {border-radius:50%;}
 }
-
 @keyframes glowPulse {
   0%,100% {opacity:.4;}
   50% {opacity:.7;}
@@ -456,7 +454,6 @@ body.light .footer-glow {
     text-align:center;
   }
 }
-
 @media (max-width:768px) {
   .profile-image {
     width:220px;
