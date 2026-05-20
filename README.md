@@ -15,4 +15,4 @@ This is my personal portfolio website built using HTML, CSS, and JavaScript.
 - JavaScript
 
 ## Live Demo
-https://abhinav-portfolio27.netlify.app/
+https://abhinavkg27.github.io/MyPortfolio/
